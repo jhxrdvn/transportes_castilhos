@@ -1,0 +1,329 @@
+/*reset de qualquer configuração de estilo, posição, etc */
+* { 
+    margin: auto;
+    padding: auto;
+    box-sizing: border-box;
+}
+/*reset de qualquer configuração de estilo, posição, etc */
+
+/* Definindo padrão para o container*/
+.container { 
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #c4a632;
+    border-radius: 30px
+}
+/* Definindo padrão para o container*/
+
+
+
+
+
+/*---------------------------------------- CABEÇALHO --------------------------------------------------*/
+/*Definindo fonte e estilo*/
+header, /*Cabeçalho*/
+section h2, /*Sessão sobre*/
+section h3, /*Sessão contato*/
+form button { /*botão de enviar do forms*/
+    font-family: 'Bungee', cursive;
+    font-weight: normal;
+}
+/*Definindo fonte e estilo*/
+
+header {
+    background-color: #c4a632;
+    width: 100%;
+    color: black;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 15px;
+}
+
+header nav a {
+    color: black;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: #0058bc;
+    text-decoration-line: overline;
+}
+
+header .container, /*personalização da tag que está com a classe container e dentro da header*/
+section .container {  /*personalização da desc. e imgs que está com a classe brands-list*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .container p {
+    padding-bottom: 15px;
+}
+
+h1:hover {
+    color: #0058bc;
+}
+/*---------------------------------------- CABEÇALHO -------------------------------------------------*/
+
+
+
+
+
+/*---------------------------------------- BODY ------------------------------------------------------*/
+/*Definindo cor e fonte do corpo e forms*/
+body, input, textarea {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffcc0046;
+}
+/*Definindo cor e fonte do corpo e forms*/
+/*---------------------------------------- BODY ------------------------------------------------------*/
+
+
+
+
+
+/*---------------------------------------- SESSÃO ABOUT ----------------------------------------------*/
+/* personlaização do fundo da SESSÃO ABOUT */
+#about {
+    background-color: #c4a632;
+    max-width: 1280px;
+    width: 100%;
+    margin: 50px auto;
+    padding: 0 5px 0 0;
+    border-radius: 30px;
+}
+/* personlaização do fundo da SESSÃO ABOUT */
+
+/*Ajustando espaçamento e tamanho do logo*/
+.logotipo { 
+    height: 500px;
+    margin-right: 32px;
+}
+/*Ajustando espaçamento e tamanho do logo*/
+
+/*personalizaçã das imagens rede social*/ 
+section .container a {
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.social-links img {
+    height: 25px;
+}
+
+.social-links li { 
+    display: inline;
+}
+/*personalizaçã das imagens rede social*/ 
+
+#about h2{
+    font-size: 20px;
+}
+
+/*efeito titulo sobre*/
+h2:hover {
+    color: #0058bc;
+}
+/*efeito titulo sobre*/
+/*---------------------------------------- SESSÃO ABOUT ----------------------------------------------*/
+
+
+
+
+/*---------------------------------------- SESSÃO IMAGENS ----------------------------------------------*/
+/*ajustando SESSÃO IMAGES*/
+#images{
+    background-color: #c4a632;
+    max-width: 620px;
+    height: 390px;
+    border-radius: 30px;
+    padding-right: 10px;
+    display: flex;
+}
+/*ajustando SESSÃO IMAGES*/
+
+/*posição e estilo slider de imagens*/
+.slider {
+    display: block;
+    height: 293px;
+    width: 600px;
+    position: relative;
+    align-items: center;
+}
+
+.slider li {
+    list-style: none;
+    position: absolute;
+}
+
+.slider img {
+    width: 100%;
+    height: 300px;
+}
+
+.slider input {
+    display: none;
+}
+
+.slider label {
+    background-color: black;
+    margin: -15px auto ;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    border-radius: 5px;
+    height: 10px;
+    width: 10px;
+    z-index: 10;
+}
+
+.slider li:nth-child(1) label {
+    left: 5px;
+}
+
+.slider li:nth-child(2) label {
+    left: 20px;
+}
+
+.slider li:nth-child(3) label {
+    left: 35px;
+}
+
+.slider img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+    justify-content: space-around;
+}
+/*posição e estilo slider de imagens*/
+
+h3:hover {
+    color: #0058bc;
+}
+/*---------------------------------------- SESSÃO IMAGENS ------------------------------------------------*/
+
+
+
+
+
+/*---------------------------------------- SESSÃO CONTACT 2 ----------------------------------------------*/
+/* personalização do fundo da SESSÃO CONTACT */
+#contact2 {
+    background-color: #c4a632;
+    max-width: 700px;
+    margin: 30px auto;
+    border-radius: 30px;
+    padding: 5px 30px 30px 30px;
+}
+
+.local h3 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.local p {
+    max-width: 630px;
+}
+
+/* personalização do fundo da SESSÃO CONTACT */
+/*---------------------------------------- SESSÃO CONTACT 2 ----------------------------------------------*/
+
+
+
+
+
+/*---------------------------------------- SESSÃO CONTACT ------------------------------------------------*/
+/* personalização do fundo da SESSÃO CONTACT */
+#contact {
+    background-color: #c4a632;
+    max-width: 400px;
+    padding: auto;
+    margin: 30px auto;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 30px;
+}
+/* personalização do fundo da SESSÃO CONTACT */
+
+/*Ordenação do forms e botão*/
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+/*Ordenação do forms e botão*/
+
+/* posição e tamanho dos campos do form*/
+form textarea {
+    resize: none;
+    height: 180px;
+}
+/* posição e tamanho dos campos do form*/
+
+/*personalização do botão e do forms*/
+form button {
+    background-color: #0058bc;
+    color: #f1ecf0;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color:  #0058bcd5;
+}
+
+input:focus, textarea:focus {
+    outline-color: #0058bc;
+}
+/*personalização do botão e do forms*/
+
+/*posição e personalização da CLASSE FORMU*/
+.formu {
+    padding: 10px 0 25px ;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;;
+}
+/*posição e personalização da CLASSE FORMU*/
+
+.formu h3 {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 auto;
+}
+/*---------------------------------------- SESSÃO CONTACT ------------------------------------------------*/
+
+
+
+
+
+/*------------------------------------------- RODAPÉ -----------------------------------------------------*/
+footer {
+    background-color: #c4a632;
+    color: black;
+    padding: 15px;
+}
+/*------------------------------------------- RODAPÉ ----------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
